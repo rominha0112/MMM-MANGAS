@@ -1,0 +1,168 @@
+
+ header {
+  background-color: #fffa4c;
+  font-family: "Lato","Noto Sans";
+  font-size: 25px ;
+  justify-content: center  ;
+  text-align: center;
+  border-bottom:5px solid red;
+  width:100%;
+ color: #000000;
+margin-top:0 !important;
+ top:0 ;
+ }
+
+ 
+ body {
+  background-color: #f54c54;
+  font-family: "Lato","Noto Sans";
+  font-size: 18px ;
+  display:flex ;
+  flex-direction:column ;
+  position: relative;
+  min-height:100vh ;
+  margin: 0;
+  gap: 0;
+ justify-content: flex start;
+  align-items:center ;
+color: #000000;
+ }
+body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 20px solid black;
+  pointer-events: none; 
+  z-index: 9999;        
+}
+ footer {
+  background-color: #f54c54;
+  font-family: "Inter","Poppins";
+  font-size: 12px ;
+  width:100% ;
+ max-width:1000px ;
+ }
+
+.container { 
+  margin:0;
+  width: 90%;
+  max-width:800px ;
+  max-height:1000px ;
+  background-color: #f1f6ea;
+  border: 4px solid black;
+  border-radius: 0px;
+  box-shadow: 8px 8px 0px 0px black;
+  position: relative;
+color: #444444;
+}
+
+ 
+  ul {
+  list-style-type: none;
+  margin: 20px auto;
+  padding: 0;
+  width: 250px;
+  background-color:#fa7118;
+  position: relative;
+  text-decoration: none;
+  border-radius:20px ;
+ }
+
+li a {
+  display: block;
+  color: black;
+  padding: 8px 16px;
+text-decoration: none;
+
+}
+li a:hover {
+  background-color:#f54c54 ;
+  color:white ;
+}
+
+
+
+ .chatarea{
+   background-image: url("../IMAGENSDOPROJETO/MMM.jpg");
+  background-repeat:repeat ;
+  background-size:200px ;
+  background-color:#f2dede ;
+ 
+ }    
+ 
+ .tutu {
+ display: flex;
+ flex-direction:column ;
+text-align: center;
+width:auto !important ;
+align-items: center;
+gap: 10px;
+background:#fa7118 ;
+padding: 15px;
+border-radius: 10px;
+  width: 100%;
+}
+.,maga {
+ display:flex ;
+ justify-content: center;
+}
+.tutu button {
+  width: 87%; 
+  max-width: 200px; 
+  padding: 12px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 8px;
+  border: none;
+  background-color: #fffa4c; 
+  color: black;
+  transition: transform 0.2s;
+
+}
+  .hiper{
+    display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+  }
+  .picture{
+    width:80px ;
+
+  }
+
+  .tutu button {
+  width: 100%;            
+  padding: 8px;
+  cursor: pointer;
+}
+.Coringa {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 20px solid black;
+  pointer-events:auto ; 
+  z-index: 9999;        
+ background-image: url("../IMAGENSDOPROJETO/texture.jpg");
+  background-repeat:repeat ;
+  background-size:200px ;
+  background-color:#f2dede ;
+}
+ .pano {
+  height:85px ;
+  width:65px ;
+ }
+
+ .m {
+  background-color:#f54c54 ;
+  border-radius:6px  ;
+  color: yellow;
+  box-shadow: 3px;
+  margin: 20px;
+ }
+

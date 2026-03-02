@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="Estilo.css/minhamae.css"/>
+<header >
+    <h1>Se cadastrando... </h1>
+ <p>Esse processo pode levar alguns minutos.</p>
+</header>
+<h1>Bem vindo a MMM!</h1>
+<body>
+<h1> Cadastre-se</h1>
+<img src="IMAGENSDOPROJETO/swords.png" height="110px">
+<h3>Se cadastrando, você melhora muito a sua experiencia aqui no site.</h3>
+
+<p>Escolha o modo como quer se cadastrar.</p>
+<form>
+<input type="radio" id="E-mailopção" name="opção de login" value="E-mail">
+<label for=E-mailopção>E-mail</label><br>
+<input type="radio" id="Telefoneopção" name="opção de login" value="Telefone">
+<label for="Telefoneopção">Telefone</label><br>
+</form>
+<section id=E-mail>
+<form>
+<input type="email" id="E-mailform" placeholder="Seu E-mail"/>
+<input type="password" id="Senha" placeholder="Senha"/>
+<input type="text" id="Apelido" placeholder="Seu apelido(é desse modo que as outras pessoas verão a sua conta)"/>
+<p>Escolha sua foto de perfil</p>
+<input type="file" id="fileinput" stile="display: none">
+<button type="button" id="pirotecnica">Selecionar Foto</button>
+<input type="text" id="zelda" placeholder="Escreva um pouco sobre você">
+<input type="Submit" value="Enviar"/>
+</form>
+</section>
+<section id="Telefone">
+<form>
+<input type="number" id="Telefoneform" placeholder="Seu telefone"/>
+<input type="text" id="Apelido" placeholder="Seu apelido(é desse modo que as outras pessoas verão a sua conta)"/>
+<input type="text" id="zelda" placeholder="Escreva um pouco sobre você">
+<p>Escolha sua foto de perfil</p>
+<input type="file" id="fileinput2" stile="display: none">
+<button type="button" id="eletricspirit">Selecionar Foto</button>
+<input type="Submit" value="Enviar"/>
+</form>
+</section>
+<script>
+const radioEmail = document.getElementById("E-mailopção");
+const radioTelefone = document.getElementById("Telefoneopção");
+
+window.onload = function() {
+  document.getElementById("E-mail").style.display = "none";
+  document.getElementById("Telefone").style.display = "none";
+};
+
+radioEmail.addEventListener("change", function() {
+    if (radioEmail.checked) {
+         document.getElementById("Telefone").style.display = "none";
+        document.getElementById("E-mail").style.display = "block";
+  }
+});
+radioTelefone.addEventListener("change", function() {
+    if (radioTelefone.checked) {
+         document.getElementById("Telefone").style.display = "block";
+        document.getElementById("E-mail").style.display = "none"    
+    }
+});
+</script>
+<script>
+const botao = getElementById("pirotecnica")
+const input = getElementById("fileinput")
+
+botao.addEventListener("click", function () {
+
+    input.click();
+});
+</script>
+<script>
+const butao = getElementById("eletricspirit")
+const inputt = getElementById("fileinput2")
+
+butao.addEventListener("click", function () {
+
+    inputt.click();
+});
+</script>
+</body>
+</html>

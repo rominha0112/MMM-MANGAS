@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="Estilo.css/minhamae.css"/>
+<html lang="pt-br">
+<body class="Coringa">
+<div class="alto">
+<button onclick="window.history.back()" class="pano">⬅</button>
+<h1 id="nome-contato"> Carregando...</h1>
+</div>
+<div id="chatu"></div>
+<form id=form>
+<div>
+<input type="text" id="msg" placeholder="sua mensagem"/>
+<button type="submit">Enviar</button>
+
+</div>
+</form>
+<script>
+	const mensagi = document.getElementById("msg");
+     const gpt = document.getElementById("chatu"); 
+     const forms = document.getElementById("form"); 
+	
+	forms.addEventListener("submit", function (evento) {
+     evento.preventDefault();
+
+    const text = mensagi.value
+
+    if (text.trim() === "") return;
+
+    const lamineyamal = document.createElement( "div" )
+     lamineyamal.textContent = text ;
+     
+      gpt.appendChild(lamineyamal);
+
+     mensagi.value = ""; 
+
+});
+</script>
+<script>
+    const urlParams = new URLSearchParams(window.location.search);
+const nomeDinamico = urlParams.get('nome');
+
+if (nomeDinamico) {
+    document.getElementById('nome-contato').innerText = nomeDinamico;
+}
+</script>
+<script>
+    function window.history.back () {}
+
+    window.location.href="chat.html"
+</script>
+</body>
+</html>

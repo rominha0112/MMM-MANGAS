@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="Estilo.css/minhamae.css"/>
+</head>
+<body>
+
+<header id="TopoDaPágina" >
+    <div class="header-container">
+        <div class="Logo">
+            <img src="IMAGENSDOPROJETO/logo.png" height="150px" id="logo"/>
+        </div>
+
+        <div class="Barradebusca">
+            <form> 
+                <input type="text" placeholder="Buscar Mangá" id="Barrade_Busca"/>
+            </form>
+        </div>
+
+        <div class="botoes-usuario">
+            <button class="btn-retro" onclick="Entrar()">Entrar</button>
+            <button class="btn-retro" onclick="cadastrar()">Se cadastrar</button>
+        </div>
+
+        <ul class="menu-navegacao" align="center">
+            <li><a href="#Venda">Mangás à venda</a></li>
+            <li><a href="#Trocas">Mangás para a troca</a></li>
+            <li><a href="#lancamentos">Lançamentos</a></li>
+            <li><a href="#Maisvendidos">Mais vendidos</a></li>
+            <li><a href="#promocoes">Promoções</a></li>
+        </ul>
+
+        <button class="btn-chat" onclick="chat()">
+            <img src="IMAGENSDOPROJETO/Chat.png" height="40px" id="Chat">
+        </button>
+    </div>
+</header>
+
+<div class="layout-principal">
+    
+    <main class="container-site">
+        <section id="Venda">
+            <h3> Mangás à venda</h3>
+            <div class="card-manga">
+                <img src="IMAGENSDOPROJETO/onepiece1.jpg" height="100px"/>
+                <p><strong>Comentários:</strong> One piece, volume 1, edição limitada, usado.<br>
+                <strong>Gênero:</strong> Shonen | <strong>Idioma:</strong> Bilíngue<br>
+                <strong>Preço:</strong> <span class="preco">R$50,00</span></p>
+                 <button>Comprar</button>
+             </div>
+        </section>
+
+        <section id="Trocas">
+            <h3> Sessão de troca </h3>
+            <div class="card-manga">
+                <img src="IMAGENSDOPROJETO/BUZZILA.jpg" height="100px"/>
+                <p><strong>Comentários:</strong> Godzilla Awakening, edição única, novo.<br>
+                <strong>Gênero:</strong> Ação, Ficção Científica<br>
+                <strong>Preço:</strong> <span class="preco">R$500,00</span></p>
+                <button>Trocar</button>
+           </div>
+        </section>
+    </main>
+ <section id="lancamentos">
+     <div>
+         <h3>Lançamentos</h3>
+         <img src="IMAGENSDOPROJETO/naruto2.png" height="100px">
+         <p><strong>Comentários:</strong> Jujutsu Kaisen, volume 1,novo<br>
+                <strong>Gênero:</strong> Shonen<br>
+                <strong>Preço:</strong> <span class="preco">R$80,00</span></p>
+                <button>Comprar</button>
+     </div>
+ </section>
+<section id="Maisvendidos">
+     <div>
+         <h3>Mais Vendidos</h3>
+         <img src="IMAGENSDOPROJETO/tropadogordao.jpg" height="100px">
+         <p><strong>Comentários:</strong> One Piece, volume 16,usado<br>
+                <strong>Gênero:</strong> Shonen<br>
+                <strong>Preço:</strong> <span class="preco">R$80,00</span></p>
+                <button>Comprar</button>
+     </div>
+ </section>
+<section id="promocoes">
+     <div>
+        <h3>Promoções</h3>
+         <img src="IMAGENSDOPROJETO/justin.jpg" height="100px">
+         <p><strong>Comentários:</strong> Dragon Ball, volume 1,péssimo estado<br>
+                <strong>Gênero:</strong> Shonen<br>
+                <strong>Preço:</strong> <span class="preco">R$10,00 - 50%=R$05,00</span></p>
+                <button>Comprar</button>
+     </div>
+ </section>
+<footer id="Rodapé">
+    <p>2026 MMM. Todos os direitos reservados</p>
+    <p>@MMM_MANGÁS_BRASIL</p>
+</footer> 
+<script>
+    function Entrar() {
+        window.location.href= "escolha.html"
+    }
+</script>
+<script>
+    function cadastrar () {
+        window.location.href="cadastro.html"
+    }
+</script>
+<script>
+    function chat () {
+        window.location.href="chat.html"
+    }
+</script>
+</body>
+</html>

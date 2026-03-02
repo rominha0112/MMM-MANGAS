@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="Estilo.css/minhamae.css"/>
+<html>
+<head>
+<link rel="sty<lesheet" href="Estilo.css"/>
+</head>
+<body>
+<h1>Entrar</h1>
+<p>Escolha o modo como quer entrar.</p>
+<form>
+<input type="radio" id="E-mailopção" name="opção de login" value="E-mail">
+<label for=E-mailopção>E-mail</label><br>
+<input type="radio" id="Telefoneopção" name="opção de login" value="Telefone">
+<label for="Telefoneopção">Telefone</label><br>
+</form>
+<section id=E-mail>
+<form>
+<input type="email" id="E-mailform" placeholder="Seu E-mail"/>
+<input type="password" id="Senha" placeholder="Senha"/>
+<input type="Submit" value="Enviar"/>
+</form>
+</section>
+<section id="Telefone">
+<form>
+<input type="number" id="Telefoneform" placeholder="Seu telefone"/>
+<input type="Submit" value="Enviar"/>
+</form>
+</section>
+<script>
+const radioEmail = document.getElementById("E-mailopção");
+const radioTelefone = document.getElementById("Telefoneopção");
+
+window.onload = function() {
+  document.getElementById("E-mail").style.display = "none";
+  document.getElementById("Telefone").style.display = "none";
+};
+
+radioEmail.addEventListener("change", function() {
+    if (radioEmail.checked) {
+         document.getElementById("Telefone").style.display = "none";
+        document.getElementById("E-mail").style.display = "block";
+  }
+});
+radioTelefone.addEventListener("change", function() {
+    if (radioTelefone.checked) {
+         document.getElementById("Telefone").style.display = "block";
+        document.getElementById("E-mail").style.display = "none"    
+    }
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="Estilo.css/minhamae.css"/>
+<html>
+<head>
+<link rel="stylesheet" href="Estilo.css"/>
+</head>
+<body>
+<h1> Publique o seu anuncio</h1>
+<p>Escolha se quer:</p>
+<form>
+<input type="radio" id="Venderopcao" name="Opção" value="Vender">
+<label for=Venderopcao>Vender</label><br>
+<input type="radio" id="Trocaropcao" name="Opção" value="Trocar">
+<label for="Trocaropcao">Trocar</label><br>
+<input type="radio" id="Trocarouvenderopcao" name="Opção" value="Trocarouvender">
+<label for="Trocarouvenderopcao">Trocar ou Vender</label><br>
+</form>
+<section id=Opcaovender>
+<form>
+<input type="text" id="titule" placeholder="Nome do Mangá"/>
+<input type="text" id="Volume" placeholder="Volume do Mangá"/>
+<input type="text" id="preco"  placeholder="Preço"/>
+<input type="text" id="Estado" placeholder="Estado(Novo,usado,velho...)"/>
+<input type="text" id="Lingua" placeholder="Idioma"/>
+<input type="text" id="Editora"placeholder="Editora"/>
+<input type="text" id="Genero" placeholder="Genero"/>
+<input type="text" id="Descricao" placeholder="Descrição"/>
+<input type="text" id="Localizacao" placeholder="Localização"/>
+<input type="text" id="Contato" placeholder="Numero para contato"/>
+<input type="text" id="Orientaçoes do Frete" placeholder="Orientaçoes para o frete"/>
+<input type="Submit" value="Enviar"/>
+</form>
+</section>
+<section id="Opcaotrocar">
+<form>
+<input type="text" id="titule2" placeholder="Nome do Mangá"/>
+<input type="text" id="Volume2" placeholder="Volume do Mangá"/>
+<input type="text" id="Troca2"  placeholder="Mangá que quero em troca."/>
+<input type="text" id="Estado2" placeholder="Estado(Novo,usado,velho...)"/>
+<input type="text" id="Lingua2" placeholder="Idioma"/>
+<input type="text" id="Editora2"placeholder="Editora"/>
+<input type="text" id="Genero2" placeholder="Genero"/>
+<input type="text" id="Descricao2" placeholder="Descrição"/>
+<input type="text" id="Localizacao2" placeholder="Localização"/>
+<input type="text" id="Contato" placeholder="Numero para contato"/>
+<input type="text" id="Orientaçoes do Frete" placeholder="Orientaçoes para o frete"/>
+<input type="Submit" value="Enviar"/>
+</form>
+</section>
+<section id="Venderoutrocar">
+<form>
+<input type="text" id="titule2" placeholder="Nome do Mangá"/>
+<input type="text" id="Volume2" placeholder="Volume do Mangá"/>
+<input type="text" id="Troca2"  placeholder="Mangá que quero em troca."/>
+<input type="text" id="Preço3" placeholder="Preço"/>
+<input type="text" id="Estado2" placeholder="Estado(Novo,usado,velho...)"/>
+<input type="text" id="Lingua2" placeholder="Idioma"/>
+<input type="text" id="Editora2"placeholder="Editora"/>
+<input type="text" id="Genero2" placeholder="Genero"/>
+<input type="text" id="Descricao2" placeholder="Descrição"/>
+<input type="text" id="Localizacao2" placeholder="Localização"/>
+<input type="text" id="Contato" placeholder="Numero para contato"/>
+<input type="text" id="Orientaçoes do Frete" placeholder="Orientaçoes para o frete"/>
+<input type="Submit" value="Enviar"/>
+</form>
+<script>
+const radioVender = document.getElementById("Venderopcao");
+const radioTrocar = document.getElementById("Trocaropcao");
+const radioTrocarouvender=document.getElementById("Trocarouvenderopcao")
+window.onload = function() {
+  document.getElementById("Opcaovender").style.display = "none";
+  document.getElementById("Opcaotrocar").style.display = "none";
+  document.getElementById("Venderoutrocar").style.display= "none";
+};
+
+radioVender.addEventListener("change", function() {
+    if (radioVender.checked) {
+         document.getElementById("Venderoutrocar").style.display = "none";
+         document.getElementById("Opcaotrocar").style.display = "none";
+         document.getElementById("Opcaovender").style.display = "block";
+  }
+});
+radioTrocar.addEventListener("change", function() {
+    if (radioTrocar.checked) {
+         document.getElementById("Opcaovender").style.display = "none" ;
+         document.getElementById("Venderoutrocar").style.display = "none";
+         document.getElementById("Opcaotrocar").style.display = "block";
+           
+    }
+   });
+ 
+    radioTrocarouvender.addEventListener("change", function() {
+    if (radioTrocarouvender.checked) {
+         document.getElementById("Venderoutrocar").style.display = "block";
+         document.getElementById("Opcaotrocar").style.display = "none";
+         document.getElementById("Opcaovender").style.display = "none";    
+    }
+});
+</script>
+</body>
+</html>
