@@ -160,9 +160,10 @@ border-radius: 10px;
 
  .m {
   background-color:#f54c54 ;
-  border-radius:6px  ;
+  border:40px  ;
   color: yellow;
   box-shadow: 3px;
   margin: 20px;
  }
+
 
