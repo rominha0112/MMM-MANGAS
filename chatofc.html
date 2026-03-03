@@ -2,18 +2,18 @@
 <link rel="stylesheet" href="Estilo.css/minhamae.css"/>
 <html lang="pt-br">
 <body class="Coringa">
-<div class="alto">
+<section>
 <button onclick="window.history.back()" class="pano">⬅</button>
 <h1 id="nome-contato"> Carregando...</h1>
-</div>
-<div id="chatu"></div>
-<form id=form>
-<div>
+</section>
+<section id="chatu" class="chatu">
+<form id="form">
 <input type="text" id="msg" placeholder="sua mensagem"/>
 <button type="submit">Enviar</button>
-
-</div>
 </form>
+</section>
+
+
 <script>
 	const mensagi = document.getElementById("msg");
      const gpt = document.getElementById("chatu"); 
@@ -32,7 +32,7 @@
       gpt.appendChild(lamineyamal);
 
      mensagi.value = ""; 
-
+    lamineyamal.classList.add('m')
 });
 </script>
 <script>
@@ -48,5 +48,6 @@ if (nomeDinamico) {
 
     window.location.href="chat.html"
 </script>
+
 </body>
 </html>
