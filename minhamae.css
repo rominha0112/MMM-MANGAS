@@ -1,6 +1,6 @@
 
  header {
-  background-color: #fffa4c;
+  background-color: #fff594;
   font-family: "Lato","Noto Sans";
   font-size: 25px ;
   justify-content: center  ;
@@ -14,7 +14,7 @@ margin-top:0 !important;
 
  
  body {
-  background-color: #f54c54;
+  background-color: #ff6b71;
   font-family: "Lato","Noto Sans";
   font-size: 18px ;
   display:flex ;
@@ -86,7 +86,7 @@ li a:hover {
 
 
  .chatarea{
-   background-image: url("../IMAGENSDOPROJETO/MMM.jpg");
+   background-image: url("../IMAGENSDOPROJETO/texture.jpg");
   background-repeat:repeat ;
   background-size:200px ;
   background-color:#f2dede ;
@@ -165,5 +165,7 @@ border-radius: 10px;
   box-shadow: 3px;
   margin: 20px;
  }
+
+
 
 
