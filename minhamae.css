@@ -1,7 +1,7 @@
 
  header {
   background-color: #fff594;
-  font-family: "Lato","Noto Sans";
+  font-family: "Seogue UI"Lato","Noto Sans";
   font-size: 25px ;
   justify-content: center  ;
   text-align: center;
@@ -15,7 +15,7 @@ margin-top:0 !important;
  
  body {
   background-color: #ff6b71;
-  font-family: "Lato","Noto Sans";
+  font-family:"Seogue UI" "Lato","Noto Sans";
   font-size: 18px ;
   display:flex ;
   flex-direction:column ;
@@ -40,7 +40,7 @@ body::after {
 }
  footer {
   background-color: #f54c54;
-  font-family: "Inter","Poppins";
+  font-family:"Seogue UI" "Inter","Poppins";
   font-size: 12px ;
   width:100% ;
  max-width:1000px ;
@@ -168,6 +168,7 @@ border-radius: 10px;
 input {
   margin:40px;
 }
+
 
 
 
