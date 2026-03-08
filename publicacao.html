@@ -4,9 +4,12 @@
 <head>
 <link rel="stylesheet" href="Estilo.css"/>
 </head>
-<body>
+<header>
 <h1> Publique o seu anuncio</h1>
+<img src="IMAGENSDOPROJETO/swords.png" height="110px">
 <p>Escolha se quer:</p>
+</header>
+<body>
 <form>
 <input type="radio" id="Venderopcao" name="Opção" value="Vender">
 <label for=Venderopcao>Vender</label><br>
@@ -16,7 +19,7 @@
 <label for="Trocarouvenderopcao">Trocar ou Vender</label><br>
 </form>
 <section id=Opcaovender>
-<form>
+<form class="formando">
 <input type="text" id="titule" placeholder="Nome do Mangá"/>
 <input type="text" id="Volume" placeholder="Volume do Mangá"/>
 <input type="text" id="preco"  placeholder="Preço"/>
@@ -28,11 +31,11 @@
 <input type="text" id="Localizacao" placeholder="Localização"/>
 <input type="text" id="Contato" placeholder="Numero para contato"/>
 <input type="text" id="Orientaçoes do Frete" placeholder="Orientaçoes para o frete"/>
-<input type="Submit" value="Enviar"/>
 </form>
+<input type="Submit" id="zum1" value="Enviar"/>
 </section>
 <section id="Opcaotrocar">
-<form>
+<form class="formando">
 <input type="text" id="titule2" placeholder="Nome do Mangá"/>
 <input type="text" id="Volume2" placeholder="Volume do Mangá"/>
 <input type="text" id="Troca2"  placeholder="Mangá que quero em troca."/>
@@ -44,25 +47,25 @@
 <input type="text" id="Localizacao2" placeholder="Localização"/>
 <input type="text" id="Contato" placeholder="Numero para contato"/>
 <input type="text" id="Orientaçoes do Frete" placeholder="Orientaçoes para o frete"/>
-<input type="Submit" value="Enviar"/>
 </form>
+<input type="Submit" id="zum2" value="Enviar"/>
 </section>
 <section id="Venderoutrocar">
-<form>
-<input type="text" id="titule2" placeholder="Nome do Mangá"/>
-<input type="text" id="Volume2" placeholder="Volume do Mangá"/>
-<input type="text" id="Troca2"  placeholder="Mangá que quero em troca."/>
-<input type="text" id="Preço3" placeholder="Preço"/>
-<input type="text" id="Estado2" placeholder="Estado(Novo,usado,velho...)"/>
-<input type="text" id="Lingua2" placeholder="Idioma"/>
-<input type="text" id="Editora2"placeholder="Editora"/>
-<input type="text" id="Genero2" placeholder="Genero"/>
-<input type="text" id="Descricao2" placeholder="Descrição"/>
-<input type="text" id="Localizacao2" placeholder="Localização"/>
-<input type="text" id="Contato" placeholder="Numero para contato"/>
-<input type="text" id="Orientaçoes do Frete" placeholder="Orientaçoes para o frete"/>
-<input type="Submit" value="Enviar"/>
+<form class="formando">
+<input type="text" id="titule3" placeholder="Nome do Mangá"/>
+<input type="text" id="Volume3" placeholder="Volume do Mangá"/>
+<input type="text" id="Troca3"  placeholder="Mangá que quero em troca."/>
+<input type="text" id="Preco3" placeholder="Preço"/>
+<input type="text" id="Estado3" placeholder="Estado(Novo,usado,velho...)"/>
+<input type="text" id="Lingua3" placeholder="Idioma"/>
+<input type="text" id="Editora3"placeholder="Editora"/>
+<input type="text" id="Genero3" placeholder="Genero"/>
+<input type="text" id="Descricao3" placeholder="Descrição"/>
+<input type="text" id="Localizacao3" placeholder="Localização"/>
+<input type="text" id="Contato3" placeholder="Numero para contato"/>
+<input type="text" id="Orientaçoes do Frete3" placeholder="Orientaçoes para o frete"/>
 </form>
+<input type="Submit" id="zum3" value="Enviar"/>
 <script>
 const radioVender = document.getElementById("Venderopcao");
 const radioTrocar = document.getElementById("Trocaropcao");
@@ -96,6 +99,31 @@ radioTrocar.addEventListener("change", function() {
          document.getElementById("Opcaovender").style.display = "none";    
     }
 });
+   const preco = document.getElementById("preco")
+   const preco2 = document.getElementById("Preco3")
+   const botaoenvio1 = document.getElementById("zum1")
+   const botaoenvio3 = document.getElementById("zum3")
+   let taxa = 0
+   let taxa2 = 0
+
+   preco.addEventListener("input", function() {
+     {
+     
+     taxa = preco.value * 0.075
+     botaoenvio1.value = "Enviar / Taxa R$" + taxa
+      ;
+     }
+   });
+
+  Preco3.addEventListener("input", function() {
+      {
+     
+     taxa2 = preco2.value * 0.15
+     botaoenvio3.value = "Enviar / Taxa R$" + taxa2 ;
+     }
+   });
+
+
 </script>
 </body>
 </html>
