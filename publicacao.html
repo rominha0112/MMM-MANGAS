@@ -110,7 +110,7 @@ radioTrocar.addEventListener("change", function() {
      {
      
      taxa = preco.value * 0.075
-     botaoenvio1.value = "Enviar / Taxa R$" + taxa
+     botaoenvio1.value = "Enviar / Taxa R$" + taxa.toFixed(2)
       ;
      }
    });
@@ -119,7 +119,7 @@ radioTrocar.addEventListener("change", function() {
       {
      
      taxa2 = preco2.value * 0.15
-     botaoenvio3.value = "Enviar / Taxa R$" + taxa2 ;
+     botaoenvio3.value = "Enviar / Taxa R$" + taxa2.toFixed(2) ;
      }
    });
 
